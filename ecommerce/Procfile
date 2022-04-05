@@ -1,0 +1,1 @@
+web: gunicorn ecommerce.wegi --log-file -
