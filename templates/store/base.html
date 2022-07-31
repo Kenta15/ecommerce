@@ -173,7 +173,7 @@
 		}
 
 		// Dynamic css style
-		if(window.screen.width > 450){
+		if(window.screen.width > 480){
 			window.addEventListener('resize', () => {
 				if(window.innerWidth < 1150){
 					$('#search-box').css('width', '500px')
@@ -227,13 +227,119 @@
 			else
 				$('#health').css('display', 'inline')
 		}
-		
+
 		// responsive
-		if(window.screen.width <= 450){
-			$('.navbar').css('width', window.screen.width)
-			$('.row').css('width', window.screen.width)
-			$('#search-box').css('width', '90vw')
+
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+			if(window.screen.width <= 480){
+				$('.navbar').css('width', window.screen.width)
+				$('.row').css('width', window.screen.width)
+				$('#search-box').css('width', '90vw')
+			}
+
+			
+			let landscape = window.matchMedia("(orientation: landscape)")
+
+			if(landscape.matches && window.screen.width < 1000){
+				$('.navbar').css('width', window.screen.width)
+				$('.navbar-top').css({
+					'height':'100px'
+				})
+				$('.navbar-bottom').css({'overflow-x':'scroll'})
+				$('.navbar-brand').css({
+					'position':'absolute',
+					'top':'10px',
+				})
+				$('.row').css('width', window.screen.width)
+				$('#search-box').css({
+					'position':'absolute',
+					'width':'90vw',
+					'top':'50px',
+					'left':'40px',
+				})
+				$('#cart').css({
+					'position':'absolute',
+					'right':'20px',
+					'top':'7px',
+					'margin-right':'0',
+					'margin-left':'-300px',
+				})
+				$('.welcome').css({
+					'margin-top':'-20px',
+					'margin-left':'0',
+					'left':'400px'
+				})
+				$('.login-icon').css({
+					'margin-top':'-40px',
+					'margin-left':'0',
+					'margin-right':'100px',
+				})
+			}
+
+			landscape.addEventListener("change", function(event) {
+				if(event.matches) {
+					$('.navbar').css('width', window.screen.width)
+					$('.navbar-top').css({
+						'height':'100px'
+					})
+					$('.navbar-bottom').css({'overflow-x':'scroll'})
+					$('.navbar-brand').css({
+						'position':'absolute',
+						'top':'10px',
+					})
+					$('.row').css('width', window.screen.width)
+					$('#search-box').css({
+						'width':'90vw',
+						'top':'50px',
+						'left':'40px',
+					})
+					$('#cart').css({
+						'position':'absolute',
+						'right':'20px',
+						'top':'7px',
+						'margin-right':'0',
+						'margin-left':'-300px',
+					})
+					$('.welcome').css({
+						'margin-top':'-20px',
+						'margin-left':'0',
+						'left':'400px'
+					})
+					$('.login-icon').css({
+						'margin-top':'-40px',
+						'margin-left':'0',
+						'margin-right':'100px',
+					})
+				}
+				else{
+					$('.navbar').css('width', window.screen.width)
+					$('.row').css('width', window.screen.width)
+					$('#search-box').css({
+						'width':'90vw',
+						'top':'10px',
+						'left':'280px',
+					})
+					$('#cart').css({
+						'right':'20px',
+						'top':'auto',
+						'margin-right':'0',
+						'margin-left':'0',
+					})
+					$('.welcome').css({
+						'margin-top':'-18px',
+						'margin-left':'130px',
+						'left':'auto'
+					})
+					$('.login-icon').css({
+						'margin-top':'-40px',
+						'margin-left':'245px',
+						'margin-right':'0',
+					})
+				}
+			})
 		}
+		
 	</script>
 </body>
 </html>

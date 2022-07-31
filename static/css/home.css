@@ -301,7 +301,8 @@ label #cancel{
 		width:1000px;
 	}
 }
-@media (max-width:450px){
+
+@media (max-width:480px) and (orientation:portrait){
 	#search-form{
 		position:absolute;
 		top:40px;
