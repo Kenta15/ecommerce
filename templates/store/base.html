@@ -174,7 +174,6 @@
 
 		// Resizable Screen for desktop
 		const isMobile = /Android|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-		const isiPad = /webOS|iPad|/i.test(navigator.userAgent)
 
 		if(!isMobile){
 			window.addEventListener('resize', () => {
@@ -183,14 +182,11 @@
 					$('body').css('overflow-x', 'auto')
 					$('.navbar').css('width', '1160px')
 					$('.row').css('width', '1060px')
-					$('.thumbnail').css('margin-left', '0')
 				}
 				else{
 					$('#search-box').css('width', '50vw')
 					$('body').css('overflow-x', 'hidden')
 					$('.navbar').css('width', window.innerWidth)
-					if(!isiPad)
-						$('.thumbnail').css('margin-left', '30px')
 				}
 				if(window.innerWidth < 1160)
 					$('#kitchen').css('display', 'none')
@@ -212,14 +208,11 @@
 				$('body').css('overflow-x', 'auto')
 				$('.navbar').css('width', '1160px')
 				$('.row').css('width', '1060px')
-				$('.thumbnail').css('margin-left', '0')
 			}
 			else{
 				$('#search-box').css('width', '50vw')
 				$('body').css('overflow-x', 'hidden')
 				$('.navbar').css('width', window.innerWidth)
-				if(!isiPad)
-					$('.thumbnail').css('margin-left', '30px')
 			}
 			if(window.innerWidth < 1160)
 				$('#kitchen').css('display', 'none')
