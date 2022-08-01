@@ -82,7 +82,9 @@ h1,h2,h3,h4,h5,h6{
 	width:90%;
 	height:35px;
 }
-
+.row{
+	width:100vw;
+}
 .row-image{
 	width: 100px;
 }
@@ -397,9 +399,6 @@ label #cancel{
 	}
 	.row{
 		width:100vw;
-		margin:0;
-		padding:0;
-		overflow-x:hidden;
 	}
 }
 
