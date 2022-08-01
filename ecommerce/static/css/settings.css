@@ -57,7 +57,7 @@ label.btn {
         width:48%;
     }
 }
-@media (max-width:450px){
+@media (max-width:480px){
     .card-body{
         width:350px;
     }

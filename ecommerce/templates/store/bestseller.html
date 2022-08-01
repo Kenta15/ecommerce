@@ -7,7 +7,7 @@
 <div class="row">
     {% for product in array %}
         <div class="col-lg-3">
-            <p>{{product.rank}}</p>
+            <p>#{{product.rank}}</p>
             <img class="thumbnail" src="{{product.imageURL}}">
             <div class="product">
                 <h6 style="float:right; color:#F62817;">${{product.price|floatformat:2}}</h6>
