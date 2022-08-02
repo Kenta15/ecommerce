@@ -395,11 +395,11 @@ label #cancel{
 		margin-right:0;
 		margin-left:-300px;
 	}
+	.container{
+		overflow-x: hidden;
+	}
 	.row{
 		width:100vw;
-		margin:0;
-		padding:0;
-		overflow-x:hidden;
 	}
 }
 
@@ -418,6 +418,9 @@ label #cancel{
 	}
 	.login-icon{
 		margin-right:180px;
+	}
+	.col-lg-3{
+		margin-left:10px;
 	}
 }
 
