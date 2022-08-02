@@ -395,11 +395,14 @@ label #cancel{
 		margin-right:0;
 		margin-left:-300px;
 	}
+	.container{
+		overflow-x: hidden;
+	}
 	.row{
 		width:100vw;
-		margin:0;
-		padding:0;
-		overflow-x:hidden;
+	}
+	.col-lg-3{
+		margin-left:0px;
 	}
 }
 
