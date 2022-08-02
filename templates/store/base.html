@@ -103,14 +103,12 @@
 			<input type="search" id="search-box" name="search" placeholder="Search">
 		</form>
 		<div id="resize">
-			<p id="login_text" class="welcome">Hello, Sign In</p>
-			<p id="logout_text" class="welcome">Hello, {{request.user}}</p>
-			<a href="{% url 'login' %}" id="login">
-				<img class="login-icon" src="{% static 'images/login2.png' %}">
-			</a>
-			<a href="{% url 'logout' %}" id="logout">
-				<img class="login-icon" src="{% static 'images/logout2.png' %}">
-			</a>
+			<p id="login_text" class="welcome"></p>
+			<p id="logout_text" class="welcome"></p>
+
+			<a href="{% url 'login' %}" id="login"></a>
+			<a href="{% url 'logout' %}" id="logout"></a>
+
 			<a href="{% url 'cart' %}" id="cart">
 				<img id="cart-icon" src="{% static 'images/cart.png' %}">
 				<p id="cart-total">{{cartItems}}</p>
@@ -160,14 +158,16 @@
 	<script>
 
 		if(user != 'AnonymousUser'){
-			document.getElementById('login').classList.add('hidden')
-			document.getElementById('login_text').classList.add('hidden')
+			document.getElementById('logout').innerHTML = `<img class="login-icon" src="{% static 'images/logout2.png' %}">`
+			document.getElementById('logout_text').innerHTML = `Hello, {{request.user}}`
+
 			document.getElementById('signIn').classList.add('hidden')
 			document.getElementById('setting').classList.add('hidden')
 		}
 		else{
-			document.getElementById('logout').classList.add('hidden')
-			document.getElementById('logout_text').classList.add('hidden')
+			document.getElementById('login').innerHTML = `<img class="login-icon" src="{% static 'images/login2.png' %}">`
+			document.getElementById('login_text').innerHTML = `Hello, Sign In`
+			
 			document.getElementById('logOut').classList.add('hidden')
 			document.getElementById('user_setting').classList.add('hidden')
 		}
