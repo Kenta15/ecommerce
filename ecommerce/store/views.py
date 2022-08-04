@@ -163,7 +163,7 @@ def registerPage(request):
             recipient = [email]
             send_mail = EmailMessage(subject,message,from_email,recipient)
             send_mail.content_subtype = 'html'
-            send_mail.send()
+            # send_mail.send()
             return redirect('store')
 
     context = {'form': form}
