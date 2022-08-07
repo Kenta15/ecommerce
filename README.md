@@ -12,12 +12,12 @@ Users can signup, signin, and purchase the products through Paypal API.
 ## Setup
 
 Download [Python](https://www.python.org/downloads/) and [Anaconda](https://www.anaconda.com/products/distribution).
+Run these commands:
 
 ```diff
 # Install Django
 python -m pip install Django
 
-# Run these commands
 # Activate Django
 conda activate djangoenv
 
