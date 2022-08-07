@@ -7,20 +7,24 @@
 
 The first website I built in Python(Django).
 
+Users can signup, signin, and purchase the products through Paypal API.
+
 ## Setup
-```
-# Download Python
-https://www.python.org/downloads/
 
-# Download Anaconda
-https://www.anaconda.com/products/distribution
+Download [Python](https://www.python.org/downloads/) and [Anaconda](https://www.anaconda.com/products/distribution).
 
+```diff
 # Install Django
 python -m pip install Django
 
 # Run these commands
+# Activate Django
 conda activate djangoenv
+
+# Move to the file directory
 cd ecommerce
+
+# Run the local server
 python manage.py runserver
 ```
 
@@ -28,6 +32,6 @@ python manage.py runserver
 Use this link to visit the website: [Ecommerce Website](https://ecomweb2022.herokuapp.com/)
 
 ## References
-Followed this tutorial
+Followed this tutorial: https://www.youtube.com/watch?v=_ELCMngbM0E&t=1666s
 
-https://www.youtube.com/watch?v=_ELCMngbM0E&t=1666s
+PayPal API: https://developer.paypal.com/demo/checkout/#/pattern/client
