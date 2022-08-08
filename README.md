@@ -6,9 +6,19 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)
 
-The first website I built in Python(Django).
+## Overview
 
-Users can signup, signin, and purchase the products through Paypal API.
+What you can do:
+
+* sign up and sign in to continue as authenticated user or continue as a guest user which uses cookie to store the data
+* modify their information on the interface and it automatically changes the database
+* add to cart and purchase the products through PayPal API
+
+What I learned:
+
+* The usage of media query to make the website responsive
+* The way to communicate between frontend and backend
+* How to make a website and handle database in django
 
 ## Setup
 
