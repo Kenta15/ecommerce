@@ -29,9 +29,6 @@ Run these commands:
 # Install Django
 python -m pip install Django
 
-# Activate Django
-conda activate djangoenv
-
 # Move to the file directory
 cd ecommerce
 
