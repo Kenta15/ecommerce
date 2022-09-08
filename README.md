@@ -22,7 +22,7 @@ What I learned:
 
 ## Setup
 
-Download [Python](https://www.python.org/downloads/) and [Anaconda](https://www.anaconda.com/products/distribution).
+Download [Python](https://www.python.org/downloads/).
 Run these commands:
 
 ```diff
