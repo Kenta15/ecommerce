@@ -36,8 +36,10 @@ cd ecommerce
 python manage.py runserver
 ```
 
-## Application Link
-Use this link to visit the website: [Ecommerce Website](https://ecomweb2022.herokuapp.com/)
+## Demo
+https://user-images.githubusercontent.com/92241890/207778672-0ba7e922-9fc7-4265-8fce-12febb678bb1.mp4
+
+
 
 ## References
 Followed this tutorial: https://www.youtube.com/watch?v=_ELCMngbM0E&t=1666s
