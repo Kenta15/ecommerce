@@ -26,7 +26,7 @@ STATIC_DIR = os.path.join(BASE_DIR,'static')
 SECRET_KEY = 'django-insecure-e^%pze@x3*=&ox79#^jido8q!kztjmhj^!n=342xp(e)ad+s*r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ecomweb2022.herokuapp.com','127.0.0.1', 'web-production-f3bc.up.railway.app']
 
