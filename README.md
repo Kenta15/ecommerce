@@ -37,9 +37,9 @@ python manage.py runserver
 ```
 
 ## Demo
-https://user-images.githubusercontent.com/92241890/207778672-0ba7e922-9fc7-4265-8fce-12febb678bb1.mp4
-
-
+https://user-images.githubusercontent.com/92241890/208007932-738e9662-784f-4cf7-9024-68ea5981ba21.mov
+### Responsive
+https://user-images.githubusercontent.com/92241890/208008421-1ec727c7-5550-4f0a-9ef8-9d02a1207b46.mov
 
 ## References
 Followed this tutorial: https://www.youtube.com/watch?v=_ELCMngbM0E&t=1666s
